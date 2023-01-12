@@ -113,5 +113,5 @@ input[type="submit"]{
 
 .title{
     color: green;
-    size: 21px;
+    font: 21px,Roboto;
 }
