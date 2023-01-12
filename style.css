@@ -110,9 +110,3 @@ input[type="submit"]{
     color: #fff;
     text-transform: uppercase;
 }
-
-.title{
-    color: green;
-    font: 21px,Roboto;
-    text-align: center;
-}
