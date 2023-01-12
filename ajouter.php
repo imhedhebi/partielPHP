@@ -16,7 +16,7 @@
         <h2>Ajouter un utilisateur</h2>
         <p class="erreur_message">
         </p>
-        <form action="" method="GET">
+        <form action="ajouter.php" method="GET">
             <label>Nom</label>
             <input type="text" name="name" id="name">
             <label>Prénom</label>
