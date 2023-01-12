@@ -18,12 +18,12 @@
         </p>
         <form action="" method="GET">
             <label>Nom</label>
-            <input type="text" name="nom" id="name">
+            <input type="text" name="name" id="name">
             <label>Prénom</label>
-            <input type="text" name="prenom" id="firstname">
+            <input type="text" name="firstname" id="firstname">
             <label>âge</label>
             <input type="number" name="age" id="age">
-            <input type="submit" value="Ajouter" name="submit">
+            <input type="submit" value="submit" name="submit">
         </form>
     </div>
 </body>
