@@ -43,7 +43,7 @@
         
         //CHECK DUPLICATE & ADD IN DATABASE
         $check_duplicate = "SELECT * FROM db_php WHERE name = '$name' AND firstname = '$firstname'";
-        $result_check = mysqli_num_rows(mysqli_query($conn,$check_duplicate));
+        //$result_check = mysqli_num_rows(mysqli_query($conn,$check_duplicate));
 
         if($result_check > 0){
             echo '<script>alert("Record already existed")</script>';
