@@ -16,7 +16,7 @@
         <h2>Ajouter un utilisateur</h2>
         <p class="erreur_message">
         </p>
-        <form action="" method="POST">
+        <form action="" method="GET">
             <label>Nom</label>
             <input type="text" name="nom" id="name">
             <label>Prénom</label>
@@ -33,16 +33,14 @@
 
 <?php
 
+    include 'connexion.php';
+
     if(isset($_POST['submit'])){
 
         $name = $_POST['name'];
         $firstname = $_POST['firstname']; 
         $age = $_POST['age']; 
         
-
-        
-        
-
         //CHECK DUPLICATE & ADD IN DATABASE
         $check_duplicate = "SELECT * FROM db_php WHERE name = '$name' AND firstname = '$firstname'";
         $result_check = mysqli_num_rows(mysqli_query($conn,$check_duplicate));
