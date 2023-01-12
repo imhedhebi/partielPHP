@@ -10,6 +10,10 @@
 </head>
 
 <body>
+    
+    <div class="title">
+        <h1>Hello</h1>
+    </div>
     <div class="container">
         <a href="ajouter.php" class="Btn_add"> <img src="images/plus.png"> Ajouter</a>
 
@@ -22,8 +26,8 @@
                 <th>Supprimer</th>
             </tr>
         </table>
-
-
+    
+    
 
 
     </div>
