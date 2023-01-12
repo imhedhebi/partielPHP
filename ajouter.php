@@ -23,7 +23,7 @@
             <input type="text" name="prenom" id="firstname">
             <label>âge</label>
             <input type="number" name="age" id="age">
-            <input type="submit" value="Ajouter" name="button">
+            <input type="submit" value="Ajouter" name="submit">
         </form>
     </div>
 </body>
@@ -35,11 +35,11 @@
 
     include 'connexion.php';
 
-    if(isset($_POST['submit'])){
+    if(isset($_GET['submit'])){
 
-        $name = $_POST['name'];
-        $firstname = $_POST['firstname']; 
-        $age = $_POST['age']; 
+        $name = $_GET['name'];
+        $firstname = $_GET['firstname']; 
+        $age = $_GET['age']; 
         
         //CHECK DUPLICATE & ADD IN DATABASE
         $check_duplicate = "SELECT * FROM db_php WHERE name = '$name' AND firstname = '$firstname'";
